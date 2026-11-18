@@ -15,19 +15,30 @@ The selector displays a single frame from a stack, lets you move and resize an R
 - Crop a whole stack using the selected ROI
 - One Python module; no TIFF or other third-party image I/O dependency
 
-## Requirements
+## Installation
 
-- Python 3.10 or later
-- NumPy
-- PyQt6
-
-Install the dependencies in the same Python environment used by your notebook:
+Requires Python 3.10 or later. Install the latest version directly from GitHub:
 
 ```bash
-python -m pip install numpy PyQt6
+python -m pip install "git+https://github.com/jobrDev/roi-selector.git"
 ```
 
-Place `roi_selector_stack.py` beside the notebook, or add its directory to Python's import path.
+Optionally, create and activate a virtual environment before running the install command:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # macOS/Linux
+# Windows PowerShell: .venv\Scripts\Activate.ps1
+python -m pip install "git+https://github.com/jobrDev/roi-selector.git"
+```
+
+Verify the installation from the same notebook kernel or Python interpreter:
+
+```python
+import numpy
+import PyQt6
+from roi_selector_stack import ROISelector, crop_stack
+```
 
 ## Notebook usage
 
