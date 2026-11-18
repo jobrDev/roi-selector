@@ -2,9 +2,7 @@ LICENSE
 README.md
 pyproject.toml
 src/roi_selector/__init__.py
-src/roi_selector/io.py
-src/roi_selector/masks.py
-src/roi_selector/selection.py
+src/roi_selector/roi_selector_stack.py
 src/roi_selector.egg-info/PKG-INFO
 src/roi_selector.egg-info/SOURCES.txt
 src/roi_selector.egg-info/dependency_links.txt
