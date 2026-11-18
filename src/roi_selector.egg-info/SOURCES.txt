@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/roi_selector/__init__.py
+src/roi_selector/io.py
+src/roi_selector/masks.py
+src/roi_selector/selection.py
+src/roi_selector.egg-info/PKG-INFO
+src/roi_selector.egg-info/SOURCES.txt
+src/roi_selector.egg-info/dependency_links.txt
+src/roi_selector.egg-info/requires.txt
+src/roi_selector.egg-info/top_level.txt
+tests/test_selection.py

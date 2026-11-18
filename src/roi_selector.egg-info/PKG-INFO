@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: roi-selector
+Version: 0.1.0
+Summary: Cross-platform PyQt6 ROI selector for NumPy image stacks, designed for Jupyter notebooks. Select, move, resize and zoom a pixel-accurate ROI in an isolated child process, then crop entire stacks with the chosen region.
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Dynamic: license-file
