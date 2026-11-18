@@ -214,9 +214,9 @@ class ROISelector:
 
     def _show_dialog(self) -> "ROISelector":
         """Build and run the worker-owned native Qt dialog."""
-        from PyQt6.QtCore import QPointF, QRectF, Qt
-        from PyQt6.QtGui import QBrush, QColor, QImage, QPainter, QPen, QPixmap
-        from PyQt6.QtWidgets import (QApplication, QButtonGroup, QDialog, QDialogButtonBox, QDoubleSpinBox, QFormLayout, QGraphicsItem, QGraphicsPixmapItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView, QHBoxLayout, QLabel, QPushButton, QRadioButton, QSpinBox, QVBoxLayout, QWidget)
+        from PyQt6.QtCore import QPointF, QRectF, Qt # type: ignore
+        from PyQt6.QtGui import QBrush, QColor, QImage, QPainter, QPen, QPixmap # type: ignore
+        from PyQt6.QtWidgets import (QApplication, QButtonGroup, QDialog, QDialogButtonBox, QDoubleSpinBox, QFormLayout, QGraphicsItem, QGraphicsPixmapItem, QGraphicsRectItem, QGraphicsScene, QGraphicsView, QHBoxLayout, QLabel, QPushButton, QRadioButton, QSpinBox, QVBoxLayout, QWidget) # type: ignore
         global _ROI_QT_APP
         _ROI_QT_APP = QApplication.instance() or QApplication([])
         selector = self
